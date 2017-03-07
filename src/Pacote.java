@@ -9,9 +9,14 @@ public class Pacote {
 		
 	}
 	
-	public void adicionaCanal(Canal obj){
+	public void adicionaCanal(Canal obj) throws ChannelAlreadyAddedException{
 		
-		listCanais.add(obj);		
+		if (listCanais.contains(obj)) {
+	        throw new ChannelAlreadyAddedException("Este canal jÃ¡ existe!");
+	    } else {
+	    	listCanais.add(obj);
+	    }
+				
 	}
 	
 	public void setNomePacote(String nomePacote){
@@ -24,7 +29,7 @@ public class Pacote {
 		
 		for(Canal canal : listCanais ){
 			
-			System.out.println("Nome canal: " + canal.getNomeCanal() + ", Número: "+canal.getNumeroCanal());
+			System.out.println("Nome canal: " + canal.getNomeCanal() + ", Nï¿½mero: "+canal.getNumeroCanal());
 			
 		}
 		

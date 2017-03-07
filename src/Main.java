@@ -3,10 +3,10 @@ public class Main {
 	
 	public static void main(String[] args) {
 			
-			ChannelAlreadyAddedException excecaoChannel = new ChannelAlreadyAddedException();
+			//ChannelAlreadyAddedException excecaoChannel = new ChannelAlreadyAddedException("sss");
 			
 			Assinante ass1 = new Assinante("Domingos", "123456","Rua Ernesto Silva");
-			Assinante ass2 = new Assinante("Rodrigo", "123457", "Av. José Santos");
+			Assinante ass2 = new Assinante("Rodrigo", "123457", "Av. Josï¿½ Santos");
 
 			Canal can1 = new Canal();
 			Canal can2 = new Canal();
@@ -14,8 +14,10 @@ public class Main {
 		
 			can1.setNumeroCanal(13);
 			can1.setNomeCanal("RBS");
+			
 			can2.setNumeroCanal(97);
 			can2.setNomeCanal("Disney Channel");
+			
 			can3.setNumeroCanal(39);
 			can3.setNomeCanal("SporTV");
 		
@@ -26,6 +28,7 @@ public class Main {
 			pac2.setNomePacote("Esportes");
 
 			try{
+				
 				pac1.adicionaCanal(can1);
 				pac1.adicionaCanal(can2);
 		

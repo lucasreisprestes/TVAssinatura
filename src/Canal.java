@@ -9,26 +9,26 @@ public class Canal implements IntCanal{
 		
 	}
 	
-	@Override
+
 	public void setNomeCanal(String nomeCanal) {
-		// TODO Auto-generated method stub
+		
+		this.nomeCanal = nomeCanal;
 		
 	}
 	
 	public void setNumeroCanal(int numeroCanal) {
+		
 		this.numeroCanal = numeroCanal;
 	}
 	
-	@Override
 	public String getNomeCanal() {
-		// TODO Auto-generated method stub
-		return null;
+	
+		return nomeCanal;
 	}
 	
-	@Override
 	public int getNumeroCanal() {
-		// TODO Auto-generated method stub
-		return 0;
+
+		return numeroCanal;
 	}
 	
 	
